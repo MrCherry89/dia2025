@@ -43,6 +43,26 @@ $(document).ready(function () {
     nextArrow: $(".gallery-slider-wrap .slider-navigation .slick-next"),
   });
 
+  $(".project-slider").slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    prevArrow: $(".project-slider-wrap .slider-navigation .slick-prev"),
+    nextArrow: $(".project-slider-wrap .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 501,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: false,
+        },
+      },
+    ],
+  });
+
   $(".top-scroll").smoothScroll({
     speed: 1000,
   });
