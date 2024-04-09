@@ -64,18 +64,45 @@
       }
     }
   }
-  .img-wrap {
-    @include flex;
-    border-radius: 40px 40px 0 0;
-    overflow: hidden;
-    @media (max-width: 767px) {
-      border-radius: 20px 20px 0 0;
-    }
-    img {
-      width: 100%;
+  .banner-slider {
+    margin-bottom: 0;
+    .slick-dots {
+      bottom: 40px;
       @media (max-width: 767px) {
-        min-height: 180px;
-        object-fit: cover;
+        bottom: 20px;
+      }
+      li {
+        margin: 0 10px;
+        @media (max-width: 767px) {
+          margin: 0 5px;
+        }
+      }
+      button {
+        width: 20px;
+        height: 20px;
+        @media (max-width: 767px) {
+          width: 10px;
+          height: 10px;
+        }
+        &:before {
+          width: 20px;
+          height: 20px;
+          @media (max-width: 767px) {
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+    }
+    .item {
+      border-radius: 50px 50px 0 0;
+      img {
+        width: 100%;
+        @media (max-width: 767px) {
+          min-height: 180px;
+          object-fit: cover;
+          border-radius: 20px 20px 0 0;
+        }
       }
     }
   }
@@ -308,12 +335,13 @@
 }
 
 .our-team {
-  margin: 150px 0;
+  margin-top: 150px;
   @media (max-width: 1024px) {
-    margin: 100px 0;
+    margin-top: 100px;
   }
   @media (max-width: 767px) {
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding-bottom: 20px;
   }
   .title-wrap {
