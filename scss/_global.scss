@@ -1300,48 +1300,7 @@ a {
   @media (max-width: 767px) {
     padding-bottom: 100px;
   }
-  .tour-3d {
-    margin-top: -935px;
-    @media (max-width: 1200px) {
-      margin-top: -820px;
-    }
-    @media (max-width: 1024px) {
-      margin-top: -740px;
-    }
-    @media (max-width: 767px) {
-      margin-top: -690px;
-    }
-    .main-title {
-      text-align: center;
-      margin-bottom: 50px;
-      @media (max-width: 1200px) {
-        font-size: 60px;
-      }
-      @media (max-width: 1024px) {
-        font-size: 40px;
-        margin-bottom: 30px;
-      }
-      @media (max-width: 767px) {
-        font-size: 30px;
-        margin-bottom: 20px;
-      }
-    }
-  }
-  #panorama {
-    width: 100%;
-    height: 650px;
-    position: relative;
-    z-index: 0;
-    border-radius: 30px;
-    overflow: hidden;
-    @media (max-width: 1200px) {
-      height: 40vw;
-    }
-    @media (max-width: 767px) {
-      height: 60vw;
-      border-radius: 15px;
-    }
-  }
+
   .steps-info {
     margin-top: 150px;
     @media (max-width: 1200px) {
@@ -1505,6 +1464,52 @@ a {
         }
       }
     }
+  }
+}
+
+.tour-3d {
+  margin-top: -935px;
+  &.mt0 {
+    margin-top: 0;
+  }
+  @media (max-width: 1200px) {
+    margin-top: -820px;
+  }
+  @media (max-width: 1024px) {
+    margin-top: -740px;
+  }
+  @media (max-width: 767px) {
+    margin-top: -690px;
+  }
+  .main-title {
+    text-align: center;
+    margin-bottom: 50px;
+    @media (max-width: 1200px) {
+      font-size: 60px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 767px) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+}
+#panorama {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  z-index: 0;
+  border-radius: 30px;
+  overflow: hidden;
+  @media (max-width: 1200px) {
+    height: 40vw;
+  }
+  @media (max-width: 767px) {
+    height: 60vw;
+    border-radius: 15px;
   }
 }
 
@@ -1739,49 +1744,50 @@ a {
       }
     }
   }
-  .map-tab-wrap {
-    position: relative;
-    z-index: 0;
-    .tab-content {
-      .tab-content-item {
-        #map,
-        #map2,
-        #map3 {
-          width: 100%;
-          height: 650px;
-          border-radius: 30px;
-          overflow: hidden;
-          @media (max-width: 1200px) {
-            height: 550px;
-          }
-          @media (max-width: 767px) {
-            height: 370px;
-          }
+}
+
+.map-tab-wrap {
+  position: relative;
+  z-index: 0;
+  .tab-content {
+    .tab-content-item {
+      #map,
+      #map2,
+      #map3 {
+        width: 100%;
+        height: 650px;
+        border-radius: 30px;
+        overflow: hidden;
+        @media (max-width: 1200px) {
+          height: 550px;
+        }
+        @media (max-width: 767px) {
+          height: 370px;
         }
       }
     }
-    .tab-menu {
-      position: absolute;
-      top: 40px;
-      left: 40px;
-      z-index: 10;
-      @media (max-width: 1024px) {
-        top: 30px;
-        left: 30px;
-      }
+  }
+  .tab-menu {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
+    @media (max-width: 1024px) {
+      top: 30px;
+      left: 30px;
+    }
+    @media (max-width: 767px) {
+      top: 20px;
+      left: 20px;
+    }
+    button {
       @media (max-width: 767px) {
-        top: 20px;
-        left: 20px;
+        font-size: 14px;
+        padding: 15px 25px;
       }
-      button {
+      span {
         @media (max-width: 767px) {
-          font-size: 14px;
-          padding: 15px 25px;
-        }
-        span {
-          @media (max-width: 767px) {
-            display: none;
-          }
+          display: none;
         }
       }
     }
@@ -1964,6 +1970,25 @@ a {
     }
     @media (max-width: 767px) {
       padding: 50px 0;
+    }
+  }
+}
+
+.tour-3d-wrap {
+  margin-bottom: -325px;
+  @media (max-width: 1200px) {
+    margin-bottom: -200px;
+  }
+}
+
+.gallery-slider-wrap {
+  &.black-theme {
+    background: #151515;
+    padding-top: 470px;
+    padding-bottom: 200px;
+    @media (max-width: 1200px) {
+      padding-top: 300px;
+      padding-bottom: 100px;
     }
   }
 }
