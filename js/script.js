@@ -26,10 +26,12 @@ $(document).ready(function () {
   $(".banner-slider").slick({
     dots: true,
     arrows: false,
+    infinite: true,
     autoplay: true,
-    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplaySpeed: 1500, // скорость автопрокрутки в миллисекундах
+    speed: 1000, // скорость смены слайдов в миллисекундах
   });
 
   $(".gallery-slider").slick({

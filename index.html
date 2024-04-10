@@ -33,7 +33,7 @@
             <ul class="main-menu">
               <li><a href="about.html">О нас</a></li>
               <li><a href="project.html">Проекты</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="faq.html">FAQ</a></li>
               <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <a href="#leave-request-popup" class="green-btn popup">Связаться</a>
@@ -65,37 +65,87 @@
 
     <div class="banner-info-wrap">
       <div class="wrapper">
-        <div class="text-wrap">
-          <h1 class="big-title black">
-            Релокация <br />
-            в Дубай сегодня
-          </h1>
-          <div class="info">
-            <p>
-              Откройте для себя Дубай: приобретите недвижимость и начните новую
-              жизню в роскоши и комфорте на берегу!
-            </p>
-            <div class="texts">
-              <div class="text">
-                <b>$2.5M+</b>
-                <span>Довольных клиентов</span>
-              </div>
-              <div class="text">
-                <b>8.4M+</b>
-                <span>Продано квартир</span>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="banner-slider">
           <div class="item">
-            <img src="img/header-banner-img.png" alt="" />
+            <div class="text-wrap">
+              <h1 class="big-title black">
+                Релокация <br />
+                в Дубай сегодня
+              </h1>
+              <div class="info">
+                <p>
+                  Откройте для себя Дубай: приобретите недвижимость и начните
+                  новую жизню в роскоши и комфорте на берегу!
+                </p>
+                <div class="texts">
+                  <div class="text">
+                    <b>$2.5M+</b>
+                    <span>Довольных клиентов</span>
+                  </div>
+                  <div class="text">
+                    <b>8.4M+</b>
+                    <span>Продано квартир</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="img/header-banner-img.png" alt="" />
+            </div>
           </div>
           <div class="item">
-            <img src="img/header-banner-img.png" alt="" />
+            <div class="text-wrap">
+              <h1 class="big-title black">
+                Релокация <br />
+                в Дубай сегодня
+              </h1>
+              <div class="info">
+                <p>
+                  Откройте для себя Дубай: приобретите недвижимость и начните
+                  новую жизню в роскоши и комфорте на берегу!
+                </p>
+                <div class="texts">
+                  <div class="text">
+                    <b>$2.5M+</b>
+                    <span>Довольных клиентов</span>
+                  </div>
+                  <div class="text">
+                    <b>8.4M+</b>
+                    <span>Продано квартир</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="img/header-banner-img.png" alt="" />
+            </div>
           </div>
           <div class="item">
-            <img src="img/header-banner-img.png" alt="" />
+            <div class="text-wrap">
+              <h1 class="big-title black">
+                Релокация <br />
+                в Дубай сегодня
+              </h1>
+              <div class="info">
+                <p>
+                  Откройте для себя Дубай: приобретите недвижимость и начните
+                  новую жизню в роскоши и комфорте на берегу!
+                </p>
+                <div class="texts">
+                  <div class="text">
+                    <b>$2.5M+</b>
+                    <span>Довольных клиентов</span>
+                  </div>
+                  <div class="text">
+                    <b>8.4M+</b>
+                    <span>Продано квартир</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="img-wrap">
+              <img src="img/header-banner-img.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -583,7 +633,7 @@
             <ul class="footer-menu">
               <li><a href="about.html">О нас</a></li>
               <li><a href="#">Партнеры</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="faq.html">FAQ</a></li>
               <li><a href="contacts.html">Контакты</a></li>
               <li><a href="#"> Наша команда</a></li>
               <li><a href="project.html">Проекты</a></li>
@@ -639,6 +689,688 @@
     <script src="js/jquery.smooth-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+      mapInfo = {
+        data: {
+          1: {
+            id: 1,
+            order: 0,
+            code: "dgx5dXPcyd",
+            name: "JEBEL ALI FREE ZONE",
+            desc: "The most important business and logistics hub in the region: offices of almost 9,000 companies and Al Maktoum International Airport are located here. ",
+            lots: "",
+            link: "https:\/\/estateindubai.com\/districts\/business-bay-dubai\/",
+            miracode: "",
+          },
+          2: {
+            id: 2,
+            order: 1,
+            code: "TY0TgQkhyg",
+            name: "PALM JEBEL ALI",
+            desc: "One of the three famous artificial palm-shaped islands. The area is just beginning to be built up — there are many opportunities for investors and future residents. ",
+            lots: "",
+            link: "",
+            miracode: "41,42,43",
+          },
+          3: {
+            id: 3,
+            order: 2,
+            code: "BMUvschM8i",
+            name: "JBR \/ DUBAI MARINA",
+            desc: "A beloved area for tourists in Dubai, JBR \/ Dubai Marina is renowned for its impressive skyscraper skyline paired beautifully with a scenic yacht bay. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          4: {
+            id: 4,
+            order: 3,
+            code: "HK3BqrwqgQ",
+            name: "PALM JUMEIRAH",
+            desc: "One of Dubai&#039;s most recognizable locations: an artificial island shaped like a palm, with elite developments and premium restaurants.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          5: {
+            id: 5,
+            order: 4,
+            code: "Og2IC25Fcg",
+            name: "DUBAI HARBOUR",
+            desc: "A prestigious neighborhood close to Palm Jumeirah, set along the shore. This area boasts premium properties, alongside exclusive yacht clubs and premium restaurants. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          6: {
+            id: 6,
+            order: 5,
+            code: "rhkLIoYc4l",
+            name: "DUBAI INTERNET CITY",
+            desc: "A commercial hub centralizing the presence of leading tech firms, predominantly offering office spaces.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          7: {
+            id: 7,
+            order: 6,
+            code: "2qbSnkczXF",
+            name: "JUMEIRAH",
+            desc: "A beachfront paradise in the emirate, this area is dotted with luxurious villas and hotels, notably featuring the iconic sail-shaped Burj Al Arab",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          8: {
+            id: 8,
+            order: 7,
+            code: "nSh5JHcE0V",
+            name: "DUBAI SOUTH",
+            desc: "The area is located next to Al Maktoum International Airport. Diverse residential buildings are adjacent to the office buildings of logistics companies. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          9: {
+            id: 9,
+            order: 8,
+            code: "ryxAXIVchz",
+            name: "JUMEIRAH BAY ISLAND",
+            desc: "Jumeirah Bay Island is an integrated island community, offering a tranquil neighborhood of exclusive villas and residential buildings, ideal for a relaxed, resort-like living experience.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          10: {
+            id: 10,
+            order: 9,
+            code: "mLMv8GjYbl",
+            name: "PEARL JUMEIRAH ISLAND",
+            desc: "Pearl Jumeirah Island, a crafted archipelago close to Jumeirah, features opulent villas, exclusive world-class beaches, and diverse marine entertainment.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          11: {
+            id: 11,
+            order: 10,
+            code: "KB1UoVRsz5",
+            name: "AL WASL \/ CITY WALK",
+            desc: "A distinguished area right by the city&#039;s heart, where boutique buildings and villa quarters coexist. This location is famed for hosting Dubai&#039;s finest dining establishments.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          12: {
+            id: 12,
+            order: 11,
+            code: "1telrLqGsT",
+            name: "AL SAFA",
+            desc: "More akin to an expansive, picturesque park, this area is lauded as the city&#039;s verdant heart. Whether in a cozy enclosed yard or a skyscraper, you&#039;ll literally live amidst nature here.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          13: {
+            id: 13,
+            order: 12,
+            code: "gHlrSH1uUy",
+            name: "BUR DUBAI",
+            desc: "The historical center of Dubai, located on the creek&#039;s bank opposite Deira. A must-visit destination for any tourist.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          14: {
+            id: 14,
+            order: 13,
+            code: "zLUtEfcKUm",
+            name: "DUBAI INDUSTRIAL CITY",
+            desc: "The area where the manufacturing enterprises of the city are concentrated. Most of the buildings in the district are occupied by office space. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          15: {
+            id: 15,
+            order: 14,
+            code: "1TLDyOjEXi",
+            name: "JEBEL ALI INDUSTRIAL",
+            desc: "The industrial area adjacent to the port of Jebel Ali is mostly subordinated to the needs of logistics and cargo handling. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          16: {
+            id: 16,
+            order: 15,
+            code: "eOt91feH7t",
+            name: "JEBEL ALI VILLAGE",
+            desc: "Located relatively close to the coast is a residential area that includes, among other things, the community of Al Furjan and Discovery Gardens, a very green and serene district. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          17: {
+            id: 17,
+            order: 16,
+            code: "lzGObn8j6U",
+            name: "AL FURJAN",
+            desc: "A premium neighborhood located within Jebel Ali Village, mainly composed of villas and townhouses. All essentials are within reach, from scenic parks with contrasting plant areas and inviting cafes, to extensive shopping malls and the Al Furjan Club recreation center. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          18: {
+            id: 18,
+            order: 17,
+            code: "rVWZqWKcGK",
+            name: "DISCOVERY GARDENS",
+            desc: "Located in Jebel Ali Village, Discovery Gardens is segmented into six distinct zones, with each community embodying a garden characterized by its own special landscaping and flora. Renowned for its tranquility and lush greenery, it&#039;s among Dubai&#039;s most serene and verdant districts ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          19: {
+            id: 19,
+            order: 18,
+            code: "zyf0NftLny",
+            name: "JLT",
+            desc: "Jumeirah Lakes Towers is a visually striking neighborhood, blending futuristic skyscrapers with three serene lakes and a lush park – epitomizing the Dubai envisioned by those who&#039;ve only dreamed of it. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          20: {
+            id: 20,
+            order: 19,
+            code: "piZdockKwP",
+            name: "JUMEIRAH PARK",
+            desc: "Nestled near Dubai Marina, Jumeirah Park is a prestigious area mainly composed of villas, offering a serene family environment a short distance from vibrant nightlife. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          21: {
+            id: 21,
+            order: 20,
+            code: "4MJt0umI9z",
+            name: "EMIRATES HILLS",
+            desc: "A prestigious area, offering opulent villas amidst vast verdant landscapes and tranquil waterfront retreats, with the sea within easy reach",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          22: {
+            id: 22,
+            order: 21,
+            code: "QGO9XBITl5",
+            name: "AL QOUZ",
+            desc: "Known as the contemporary art quarter near Safa Park, this area has a distinct Western flair, dotted with quaint galleries and charming cafes.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          23: {
+            id: 23,
+            order: 22,
+            code: "MNfxDRbLto",
+            name: "MEYDAN \/ MBR CITY",
+            desc: "An elite district, the concept of which was personally developed by Dubai&#039;s ruler Mohammed bin Rashid Al Maktoum. This area is envisioned as one of the city&#039;s central cultural hubs.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          24: {
+            id: 24,
+            order: 23,
+            code: "GK0okMwlOE",
+            name: "DOWNTOWN",
+            desc: "The city center and the most recognizable district in the UAE, home to the world&#039;s tallest building, Burj Khalifa, and the largest shopping center, Dubai Mall.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          25: {
+            id: 25,
+            order: 24,
+            code: "fYm3VspwnC",
+            name: "BUSINESS BAY",
+            desc: "This commercial district presents a striking skyline of office and residential towers. For those dreaming of living in a city of the future, there&#039;s no better option.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          26: {
+            id: 26,
+            order: 25,
+            code: "L81szOvNIi",
+            name: "DIFC",
+            desc: "The city&#039;s financial hub, concentrating a multitude of public and private institutions from the economic sector on a small patch of land.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          27: {
+            id: 27,
+            order: 26,
+            code: "1iyAt4XO7K",
+            name: "ZA&#039;BEEL",
+            desc: "A green area located near the city center offers the picturesque skyline views and a chance to neighbour upon one of the royal places",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          28: {
+            id: 28,
+            order: 27,
+            code: "Ml3J4dgHPx",
+            name: "D. INT. AIRPORT",
+            desc: "A prime gateway in the UAE, remarkably near to the heart of the city. A brief journey can swiftly bring you to the vicinity of the towering Burj Khalifa.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          29: {
+            id: 29,
+            order: 28,
+            code: "KeEwVEch80",
+            name: "RUS AL KHOR",
+            desc: "A nature reserve near Creek Harbour and Dubai Festival City. Apart from exploring the region&#039;s unique ecosystem, you can also enjoy watching live flamingos here.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          30: {
+            id: 30,
+            order: 29,
+            code: "sPQCijY31W",
+            name: "CREEK HARBOUR",
+            desc: "A new city center, built up with elite residences with private beaches. The Creek Tower is also being built here, which will soon enter the Guinness Book of World Records as the tallest in the world.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          31: {
+            id: 31,
+            order: 30,
+            code: "inlfePxfsM",
+            name: "NADD AL HAMAR",
+            desc: "A district close to Dubai Festival City, where residential areas are interspersed with industrial zones.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          32: {
+            id: 32,
+            order: 31,
+            code: "3bPUul5gtl",
+            name: "INTERNATIONAL CITY",
+            desc: "A residential area symbolizing Dubai&#039;s openness to other cultures. It hosts DragonMart, the city&#039;s largest hypermarket for Chinese goods.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          33: {
+            id: 33,
+            order: 32,
+            code: "t4d6DZqmMW",
+            name: "NAD AL SHEBA",
+            desc: "An elite district near the city center, with a clear predominance of villas and townhouses. It also hosts one of the royal family&#039;s palaces.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          34: {
+            id: 34,
+            order: 33,
+            code: "beS5lE4Gw6",
+            name: "DUBAI HILLS",
+            desc: "A high-end community featuring an array of villas and townhouses, complemented by premium golf courses and stunning Downtown skyline views.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          35: {
+            id: 35,
+            order: 34,
+            code: "BpyybdNm4i",
+            name: "AL BARARI",
+            desc: "Renowned for its lush landscapes, this area is a haven for families, offering a tranquil, leafy retreat with opulent apartments and villas, set against the city&#039;s dynamic backdrop.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          36: {
+            id: 36,
+            order: 35,
+            code: "6VAJQh2nV",
+            name: "DUBAILAND",
+            desc: "A unique residential area with numerous entertainment venues nearby. It will feel like your villa is situated right inside a gigantic theme park.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          37: {
+            id: 37,
+            order: 36,
+            code: "yYyiIxzivt",
+            name: "JVC",
+            desc: "Jumeirah Village Circle offers a peaceful suburban lifestyle, perfect for families, blending apartment living with the option of villas and townhouses. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          38: {
+            id: 38,
+            order: 37,
+            code: "qT4rwNNQcO",
+            name: "JVT",
+            desc: "Jumeirah Village Triangle elevates the residential experience, offering a more upscale version of JVC with a focus on villa-style living. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          39: {
+            id: 39,
+            order: 38,
+            code: "lSxgjVgAUl",
+            name: "IMPZ",
+            desc: "Known as Dubai Production City, this free economic zone is a versatile district boasting a mix of residential, trading, and industrial units. Originally geared towards media production and services, the area has evolved into a dynamic, multifunctional hub, drawing in both investors and expatriates. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          40: {
+            id: 40,
+            order: 39,
+            code: "ZX7HqKGqow",
+            name: "AL MAKTOUM",
+            desc: "The area with DWC International Airport, it is a major hub for cargo and commercial transportation. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          41: {
+            id: 41,
+            order: 40,
+            code: "VLHkdPPQK9",
+            name: "DUBAI SPORST CITY",
+            desc: "A high-rise residential area featuring some essential Dubai sport facilities. The majority of athletic training grounds are also located here",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          42: {
+            id: 42,
+            order: 41,
+            code: "qg3YICLC32",
+            name: "TILAL AL GHAF",
+            desc: "This verdant area, dominated by villas and townhouses, was envisioned as a man-made oasis.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          43: {
+            id: 43,
+            order: 42,
+            code: "Pn2FErA1LD",
+            name: "ARJAN",
+            desc: "One of the more affordable, yet quite developed Dubai neighbourhoods. It offers high and medium-rise construction and lots of amenities",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          44: {
+            id: 44,
+            order: 43,
+            code: "ZzOQvA7uwr",
+            name: "MOTOR CITY",
+            desc: "A green residential area built around the city&#039;s main racetrack, offering an affordable way to live in Dubai near a park.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          45: {
+            id: 45,
+            order: 44,
+            code: "AruvDmMnB2",
+            name: "DAMAC LAGOONS",
+            desc: "This prestigious area is a world tour encapsulated, with each part echoing the charm of renowned tourist spots like Venice, Portofino, Morocco, and Andalusia.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          46: {
+            id: 46,
+            order: 45,
+            code: "Kc0W6bmblZ",
+            name: "DAMAC HILLS",
+            desc: "Positioned close to Arabian Ranches, this residential area provides residents with multiple park spaces, inviting a serene nature-infused lifestyle.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          47: {
+            id: 47,
+            order: 46,
+            code: "qecsmXBWzi",
+            name: "ARABIAN RANCHES 2",
+            desc: "This premium neighborhood is a portrait of American suburban living, predominantly consisting of meticulously designed villas and townhouses.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          48: {
+            id: 48,
+            order: 47,
+            code: "gquQ8VyHjR",
+            name: "ARABIAN RANCHES",
+            desc: "This upscale neighborhood, bordering equestrian grounds, mirrors the layout and feel of quintessential American suburbs.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          49: {
+            id: 49,
+            order: 48,
+            code: "syUqoNJMja",
+            name: "NSHAMA",
+            desc: "A cluster of neighboring communities with residential complexes and townhouses situated just beyond Arabian Ranches 2.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          50: {
+            id: 50,
+            order: 49,
+            code: "S50WOBWpNx",
+            name: "CHERRYWOODS",
+            desc: "This gated community, entirely consisting of townhouses surrounded by greenery, features uniform architecture and a well-developed infrastructure for comfortable living.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          51: {
+            id: 51,
+            order: 50,
+            code: "kqGszn1Hgd",
+            name: "AKOYA OXYGEN",
+            desc: "A community immersed in greenery within the Damac Hills area, boasting expansive pools and lines of luxurious villas.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          52: {
+            id: 52,
+            order: 51,
+            code: "7ULDjSnCx3",
+            name: "THE VALLEY",
+            desc: "Nestled within Dubailand, The Valley stands out as a premier neighborhood, offering an array of villas and townhouses amidst advanced infrastructure.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          53: {
+            id: 53,
+            order: 52,
+            code: "72NFXzbHAM",
+            name: "DUBAI WATER CANAL",
+            desc: "Carved out less than ten years ago, this canal rapidly turned into a beloved promenade, becoming an integral part of contemporary Dubai.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          54: {
+            id: 54,
+            order: 53,
+            code: "nciZxPcqvm",
+            name: "AL BARSHA",
+            desc: "Spanning an extensive territory, this area blends residential townhouses and villas with towering structures, anchored by the renowned Mall of the Emirates.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          55: {
+            id: 55,
+            order: 54,
+            code: "bCgHsPbDpx",
+            name: "JUEMIRAH GOLF ESTATE",
+            desc: "Jumeirah Golf Estates is a distinguished residential community in Dubai, featuring a selection of premium homes. Surrounded by two expansive golf courses, Jumeirah Golf Estates offers a stunning view of the serene natural landscape. This quiet green area is primarily inhabited by affluent families with children. ",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          56: {
+            id: 56,
+            order: 55,
+            code: "ShafE70f0g",
+            name: "VILLANOVA",
+            desc: "Nestled within Dubailand, this premium community offers Mediterranean-style villas and townhouses, exuding charm and elegance.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          57: {
+            id: 57,
+            order: 56,
+            code: "Gd5ypMjMRE",
+            name: "ARABIAN RANCHES 3",
+            desc: "A community of luxury villas and townhouses, the architecture of which reproduces the style of the American suburb.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          58: {
+            id: 58,
+            order: 57,
+            code: "cg69QuRkpx",
+            name: "GLOBAL VILLAGE",
+            desc: "A dynamic space hosting a diverse array of entertainment activities, cultural festivals, and shopping experiences.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          59: {
+            id: 59,
+            order: 58,
+            code: "6VAJQh2nVI",
+            name: "Dubailand",
+            desc: "A rather unique residential area with lot’s of entertainment facilities nearby. As if your villa resides right inside a giant theme-park",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+          60: {
+            id: 60,
+            order: 59,
+            code: "QWAdhdfikF",
+            name: "MIRA",
+            desc: "Located near Cherrywoods, Mira presents a cohesive residential experience with its exclusive villas and townhouses.",
+            lots: "",
+            link: "",
+            miracode: "",
+          },
+        },
+        clear: function () {
+          jQuery(".mapar svg > g > path[rion]").removeClass("active");
+          jQuery(".mpinfo").removeClass("active");
+          jQuery(".mpinfo").removeClass("err");
+          jQuery(".mpinfo .errcode").html("");
+          jQuery(".mpinfo .ok .title").html("");
+          jQuery(".mpinfo .ok .desc").html("");
+          jQuery(".mpinfo .ok .i .b span:last-child").html("");
+          jQuery(".mpinfo .ok .i").hide();
+        },
+        show: function (r) {
+          mapInfo.clear();
+          jQuery('.mapar svg > g > path[rion="' + r + '"]').addClass("active");
+          jQuery(".mpinfo").addClass("active");
+          ie = 0;
+          jQuery.each(mapInfo.data, function (i, v) {
+            if (v.code == r) {
+              ie++;
+              mapInfo.print(v);
+              return;
+            }
+          });
+          if (ie == 0) {
+            mapInfo.err(rion);
+          }
+        },
+        print: function (v) {
+          jQuery(".mpinfo .ok .i").show();
+          jQuery(".mpinfo .ok .title").html(v.name);
+          jQuery(".mpinfo .ok .desc").html(v.desc);
+          //jQuery('.mpinfo .ok .i a').attr('href', v.linl);
+          jQuery(".mpinfo .ok .i .b span:last-child").html(v.lots);
+        },
+        err: function (rion) {
+          mapInfo.clear();
+          jQuery('.mapar svg > g > path[rion="' + rion + '"]').addClass(
+            "active"
+          );
+          jQuery(".mpinfo").addClass("err");
+          jQuery(".mpinfo").addClass("active");
+          jQuery(".mpinfo .errcode").html(
+            '<input type="text" value="' + rion + '">'
+          );
+        },
+        hide: function () {
+          mapInfo.clear();
+          jQuery(".mapar svg > g > path[rion]").removeClass("active");
+        },
+      };
+      jQuery(".mapar svg > g > g > path[rion]").hover(
+        function () {
+          r = jQuery(this).attr("rion");
+
+          HOVERMAPRION_macro = {};
+          HOVERMAPRION = false;
+          jQuery.each(mapInfo.data, function (i, v) {
+            if (v.code == r) {
+              HOVERMAPRION_macro = v;
+              if (v.miracode != "") {
+                HOVERMAPRION = explode(",", v.miracode);
+              }
+              return;
+            }
+          });
+
+          jQuery(".mapar svg > g > g > path[rion]").removeClass("hover");
+          jQuery(this).addClass("hover");
+          jQuery('.mapar svg > g > g > path[rion="' + r + '"]').addClass(
+            "hover"
+          );
+          mapInfo.show(r);
+        },
+        function () {
+          //mapInfo.hide();
+        }
+      );
+    </script>
 
     <script>
       gsap.registerPlugin(ScrollTrigger);
