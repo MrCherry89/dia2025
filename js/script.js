@@ -23,15 +23,23 @@ $(document).ready(function () {
     ],
   });
 
+  $(".radios .radio-wrap.right").on("click", function () {
+    $(this).closest(".radios").addClass("active");
+  });
+
+  $(".radios .radio-wrap.left").on("click", function () {
+    $(this).closest(".radios").removeClass("active");
+  });
+
   $(".banner-slider").slick({
     dots: true,
     arrows: false,
     infinite: true,
-    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplaySpeed: 1500, // скорость автопрокрутки в миллисекундах
-    speed: 1000, // скорость смены слайдов в миллисекундах
+    speed: 800, // Скорость анимации
+    fade: true, // Анимация затухания
+    cssEase: "linear", // Функция анимации
   });
 
   $(".gallery-slider").slick({
