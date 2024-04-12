@@ -2882,6 +2882,7 @@ a:focus {
   border-bottom: 2px solid transparent;
   padding: 10px 20px;
   min-height: 120px;
+  height: 120px;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2976,6 +2977,226 @@ a:focus {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.navigation-map {
+  margin-top: 150px;
+}
+@media (max-width: 1024px) {
+  .navigation-map {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .navigation-map {
+    margin-top: 50px;
+  }
+}
+.navigation-map .wrapper .title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+@media (max-width: 767px) {
+  .navigation-map .wrapper .title-wrap {
+    margin-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.navigation-map .wrapper .title-wrap .main-title {
+  max-width: 720px;
+  padding-right: 10px;
+}
+@media (max-width: 767px) {
+  .navigation-map .wrapper .title-wrap .main-title {
+    margin-bottom: 20px;
+  }
+}
+.navigation-map .wrapper .title-wrap p {
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 450px;
+  color: #282828;
+}
+@media (max-width: 1024px) {
+  .navigation-map .wrapper .title-wrap p {
+    max-width: 350px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.reset-button {
+  margin: 0;
+  border: 1px solid #000;
+  padding: 0;
+  font-family: inherit;
+  text-align: left;
+  color: inherit;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+}
+
+.reset-button:disabled {
+  cursor: default;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf) format("ttf"), url(../fonts/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+.map__backround {
+  background-image: url(../img/map__background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1350px;
+  width: 100%;
+  min-height: 730px;
+  height: auto;
+  padding: 150px 0 0 65px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 1170px) {
+  .map__backround {
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 0;
+  }
+}
+.map__info {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 37px 18px 37px 31px;
+  background-color: #fff;
+  color: #282828;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px 0;
+}
+
+@media screen and (max-width: 1170px) {
+  .map__info {
+    gap: 10px 0;
+    padding: 15px 20px;
+  }
+}
+.map__info-title {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 1170px) {
+  .map__info-title {
+    font-size: 18px;
+  }
+}
+.map__info-text {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1170px) {
+  .map__info-text {
+    font-size: 16px;
+  }
+}
+.map__info-link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 7px;
+}
+
+@media screen and (max-width: 1170px) {
+  .map__info-link {
+    font-size: 16px;
+  }
+}
+.map__info-link::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #1d1d1b;
+}
+
+.map__picture {
+  overflow: hidden;
+  max-width: 861px;
+  width: 100%;
+  height: 730px;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1171px) {
+  .map__picture {
+    max-width: 400px;
+    max-height: 339px;
+    height: 100%;
+    right: 0;
+  }
+
+  .map__picture svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .map__picture {
+    right: -18px;
+    max-width: 450px;
+    max-height: 360px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .map__picture {
+    right: -18px;
+    max-width: 350px;
+    max-height: 260px;
+  }
+}
+.target {
+  transition: 0.3s all;
+}
+
+.target.active {
+  fill: #008039 !important;
 }
 
 @font-face {
