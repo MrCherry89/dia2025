@@ -2183,31 +2183,83 @@ a {
 .faq-wrap {
   margin-top: 40px;
   margin-bottom: 200px;
+  @media (max-width: 1300px) {
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 1024px) {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
   .wrapper {
+    @media (max-width: 1024px) {
+      padding-right: 0;
+    }
     .slider-wrap {
       @include flex;
       @include align-center;
+      @media (max-width: 1024px) {
+        position: relative;
+        @include dir-col;
+        align-items: flex-start;
+      }
+      .slider-navigation {
+        display: none;
+        @media (max-width: 1024px) {
+          @include inline-flex;
+          margin-top: 20px;
+        }
+      }
       .slider-nav {
         width: 50%;
+        height: 560px;
+        @include flex;
+        @include align-center;
+        overflow: hidden;
+        @media (max-width: 1300px) {
+          width: 60%;
+          height: 480px;
+        }
+        @media (max-width: 1024px) {
+          display: none;
+        }
+        .slick-list {
+          overflow: visible;
+        }
         .item {
-          transition: 0.3s;
           border-top: 2px solid transparent;
           border-bottom: 2px solid transparent;
-          padding: 50px 20px;
+          padding: 10px 20px;
+          min-height: 120px;
           cursor: pointer;
+          @include flex;
+          @include align-center;
+          @include justify-center;
+          outline: none !important;
+          @media (max-width: 1300px) {
+            min-height: 100px;
+          }
           p {
-            font-size: 26px;
+            font-size: 18px;
             text-align: center;
             font-weight: 500;
-            color: #777777;
+            color: #9f9f9f;
             transition: 0.3s;
+          }
+          &.slick-active {
+            p {
+              font-size: 26px;
+            }
           }
           &.slick-center {
             border-top-color: #dedede;
             border-bottom-color: #dedede;
             p {
               color: #000;
-              transform: scale(1.5);
+              font-size: 34px;
+              @media (max-width: 1300px) {
+                font-size: 30px;
+              }
             }
           }
         }
@@ -2215,12 +2267,45 @@ a {
       .slider-for {
         width: 50%;
         padding-left: 100px;
+        @media (max-width: 1300px) {
+          width: 40%;
+          padding-left: 50px;
+        }
+        @media (max-width: 1024px) {
+          width: 100%;
+          padding: 0;
+        }
         .item {
+          @media (max-width: 1024px) {
+            width: 290px;
+            min-height: 245px;
+            padding-right: 20px;
+            margin-right: 20px;
+            border-right: 2px solid #dedede;
+          }
+          h2 {
+            display: none;
+            @media (max-width: 1024px) {
+              display: block;
+              font-size: 26px;
+              color: #000;
+              font-weight: 600;
+              margin-bottom: 15px;
+            }
+          }
           p {
             font-size: 20px;
             transition: 0.3s;
             line-height: 26px;
             color: #282828;
+            @media (max-width: 1300px) {
+              font-size: 18px;
+              line-height: 24px;
+            }
+            @media (max-width: 1024px) {
+              font-size: 16px;
+              line-height: 24px;
+            }
           }
         }
       }

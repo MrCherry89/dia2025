@@ -2806,6 +2806,23 @@ a:focus {
   margin-top: 40px;
   margin-bottom: 200px;
 }
+@media (max-width: 1300px) {
+  .faq-wrap {
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .faq-wrap {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .faq-wrap .wrapper {
+    padding-right: 0;
+  }
+}
 .faq-wrap .wrapper .slider-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2814,22 +2831,83 @@ a:focus {
   -ms-flex-align: center;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .faq-wrap .wrapper .slider-wrap {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.faq-wrap .wrapper .slider-wrap .slider-navigation {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .faq-wrap .wrapper .slider-wrap .slider-navigation {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-top: 20px;
+  }
+}
 .faq-wrap .wrapper .slider-wrap .slider-nav {
   width: 50%;
+  height: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media (max-width: 1300px) {
+  .faq-wrap .wrapper .slider-wrap .slider-nav {
+    width: 60%;
+    height: 480px;
+  }
+}
+@media (max-width: 1024px) {
+  .faq-wrap .wrapper .slider-wrap .slider-nav {
+    display: none;
+  }
+}
+.faq-wrap .wrapper .slider-wrap .slider-nav .slick-list {
+  overflow: visible;
 }
 .faq-wrap .wrapper .slider-wrap .slider-nav .item {
-  transition: 0.3s;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
-  padding: 50px 20px;
+  padding: 10px 20px;
+  min-height: 120px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none !important;
+}
+@media (max-width: 1300px) {
+  .faq-wrap .wrapper .slider-wrap .slider-nav .item {
+    min-height: 100px;
+  }
 }
 .faq-wrap .wrapper .slider-wrap .slider-nav .item p {
-  font-size: 26px;
+  font-size: 18px;
   text-align: center;
   font-weight: 500;
-  color: #777777;
+  color: #9f9f9f;
   transition: 0.3s;
+}
+.faq-wrap .wrapper .slider-wrap .slider-nav .item.slick-active p {
+  font-size: 26px;
 }
 .faq-wrap .wrapper .slider-wrap .slider-nav .item.slick-center {
   border-top-color: #dedede;
@@ -2837,17 +2915,67 @@ a:focus {
 }
 .faq-wrap .wrapper .slider-wrap .slider-nav .item.slick-center p {
   color: #000;
-  transform: scale(1.5);
+  font-size: 34px;
+}
+@media (max-width: 1300px) {
+  .faq-wrap .wrapper .slider-wrap .slider-nav .item.slick-center p {
+    font-size: 30px;
+  }
 }
 .faq-wrap .wrapper .slider-wrap .slider-for {
   width: 50%;
   padding-left: 100px;
+}
+@media (max-width: 1300px) {
+  .faq-wrap .wrapper .slider-wrap .slider-for {
+    width: 40%;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .faq-wrap .wrapper .slider-wrap .slider-for {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .faq-wrap .wrapper .slider-wrap .slider-for .item {
+    width: 290px;
+    min-height: 245px;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 2px solid #dedede;
+  }
+}
+.faq-wrap .wrapper .slider-wrap .slider-for .item h2 {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .faq-wrap .wrapper .slider-wrap .slider-for .item h2 {
+    display: block;
+    font-size: 26px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
 }
 .faq-wrap .wrapper .slider-wrap .slider-for .item p {
   font-size: 20px;
   transition: 0.3s;
   line-height: 26px;
   color: #282828;
+}
+@media (max-width: 1300px) {
+  .faq-wrap .wrapper .slider-wrap .slider-for .item p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .faq-wrap .wrapper .slider-wrap .slider-for .item p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @font-face {

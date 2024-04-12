@@ -274,9 +274,20 @@ $(document).ready(function () {
   $(".slider-for").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     speed: 500,
     asNavFor: ".slider-nav",
+    prevArrow: $(".slider-wrap .slider-navigation .slick-prev"),
+    nextArrow: $(".slider-wrap .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
   $(".slider-nav").slick({
     slidesToShow: 3,
