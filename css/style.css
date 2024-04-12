@@ -1114,6 +1114,65 @@ a:focus {
   }
 }
 
+.error-wrap {
+  margin-bottom: 150px;
+}
+@media (max-width: 1024px) {
+  .error-wrap {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .error-wrap {
+    margin-bottom: 50px;
+  }
+}
+.error-wrap .wrapper {
+  max-width: 1150px;
+  text-align: center;
+}
+.error-wrap .wrapper .img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -30px;
+}
+.error-wrap .wrapper .img-wrap img {
+  width: 100%;
+}
+.error-wrap .wrapper .main-title {
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: -100px;
+}
+@media (max-width: 1024px) {
+  .error-wrap .wrapper .main-title {
+    margin-top: -8vw;
+  }
+}
+@media (max-width: 767px) {
+  .error-wrap .wrapper .main-title {
+    margin-top: -5vw;
+    margin-bottom: 20px;
+  }
+}
+.error-wrap .wrapper p {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 20px;
+  color: #282828;
+}
+@media (max-width: 767px) {
+  .error-wrap .wrapper p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+
+.mfp-figure:after {
+  content: none;
+}
+
 .select-wrap {
   position: relative;
 }
@@ -2747,8 +2806,48 @@ a:focus {
   margin-top: 40px;
   margin-bottom: 200px;
 }
-.faq-wrap .wrapper .slider .slick-block {
-  padding: 30px 0;
+.faq-wrap .wrapper .slider-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.faq-wrap .wrapper .slider-wrap .slider-nav {
+  width: 50%;
+}
+.faq-wrap .wrapper .slider-wrap .slider-nav .item {
+  transition: 0.3s;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  padding: 50px 20px;
+  cursor: pointer;
+}
+.faq-wrap .wrapper .slider-wrap .slider-nav .item p {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 500;
+  color: #777777;
+  transition: 0.3s;
+}
+.faq-wrap .wrapper .slider-wrap .slider-nav .item.slick-center {
+  border-top-color: #dedede;
+  border-bottom-color: #dedede;
+}
+.faq-wrap .wrapper .slider-wrap .slider-nav .item.slick-center p {
+  color: #000;
+  transform: scale(1.5);
+}
+.faq-wrap .wrapper .slider-wrap .slider-for {
+  width: 50%;
+  padding-left: 100px;
+}
+.faq-wrap .wrapper .slider-wrap .slider-for .item p {
+  font-size: 20px;
+  transition: 0.3s;
+  line-height: 26px;
+  color: #282828;
 }
 
 @font-face {

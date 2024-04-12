@@ -114,6 +114,18 @@ $(document).ready(function () {
     fixedContentPos: false,
   });
 
+  $(".popup-gallery").magnificPopup({
+    delegate: "a",
+    type: "image",
+    tLoading: "Loading image #%curr%...",
+    mainClass: "mfp-img-mobile",
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
+    },
+  });
+
   $(".why-slider").slick({
     dots: true,
     arrows: false,
@@ -258,4 +270,24 @@ $(document).ready(function () {
       },
     });
   }
+
+  $(".slider-for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    speed: 500,
+    asNavFor: ".slider-nav",
+  });
+  $(".slider-nav").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: ".slider-for",
+    vertical: true,
+    infinite: true,
+    speed: 500,
+    dots: false,
+    centerMode: true,
+    centerPadding: "0px",
+    focusOnSelect: true,
+  });
 });

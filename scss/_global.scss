@@ -895,6 +895,53 @@ a {
   }
 }
 
+.error-wrap {
+  margin-bottom: 150px;
+  @media (max-width: 1024px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
+  .wrapper {
+    max-width: 1150px;
+    text-align: center;
+    .img-wrap {
+      @include flex;
+      margin-right: -30px;
+      img {
+        width: 100%;
+      }
+    }
+    .main-title {
+      text-align: center;
+      margin-bottom: 35px;
+      margin-top: -100px;
+      @media (max-width: 1024px) {
+        margin-top: -8vw;
+      }
+      @media (max-width: 767px) {
+        margin-top: -5vw;
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      text-align: center;
+      margin-bottom: 35px;
+      font-size: 20px;
+      color: #282828;
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.mfp-figure:after {
+  content: none;
+}
+
 .select-wrap {
   position: relative;
   select {
@@ -2137,9 +2184,45 @@ a {
   margin-top: 40px;
   margin-bottom: 200px;
   .wrapper {
-    .slider {
-      .slick-block {
-        padding: 30px 0;
+    .slider-wrap {
+      @include flex;
+      @include align-center;
+      .slider-nav {
+        width: 50%;
+        .item {
+          transition: 0.3s;
+          border-top: 2px solid transparent;
+          border-bottom: 2px solid transparent;
+          padding: 50px 20px;
+          cursor: pointer;
+          p {
+            font-size: 26px;
+            text-align: center;
+            font-weight: 500;
+            color: #777777;
+            transition: 0.3s;
+          }
+          &.slick-center {
+            border-top-color: #dedede;
+            border-bottom-color: #dedede;
+            p {
+              color: #000;
+              transform: scale(1.5);
+            }
+          }
+        }
+      }
+      .slider-for {
+        width: 50%;
+        padding-left: 100px;
+        .item {
+          p {
+            font-size: 20px;
+            transition: 0.3s;
+            line-height: 26px;
+            color: #282828;
+          }
+        }
       }
     }
   }
