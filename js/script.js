@@ -271,6 +271,28 @@ $(document).ready(function () {
     });
   }
 
+  gsap.to(".footer-top .big-title", {
+    scale: "1.25",
+    scrollTrigger: {
+      scale: "1",
+      trigger: ".footer",
+      start: "-20%",
+      end: "bottom 20%",
+      scrub: 1,
+    },
+  });
+
+  gsap.to(".error-wrap .main-title", {
+    scale: "1.1",
+    scrollTrigger: {
+      scale: "1",
+      trigger: ".error-wrap",
+      start: "-20%",
+      end: "bottom 20%",
+      scrub: 1,
+    },
+  });
+
   $(".slider-for").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
