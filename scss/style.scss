@@ -922,6 +922,12 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: 0.3s;
+          }
+          &:hover {
+            img {
+              transform: scale(1.03);
+            }
           }
         }
         b {
