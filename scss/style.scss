@@ -877,3 +877,71 @@
     }
   }
 }
+
+.all-cityes-wrap {
+  margin-bottom: 150px;
+  @media (max-width: 767px) {
+    margin-bottom: 100px;
+  }
+  .wrapper {
+    .big-title {
+      margin-bottom: 50px;
+      @media (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+    .cityes-items {
+      display: grid;
+      gap: 50px;
+      grid-template-columns: 1fr 1fr 1fr;
+      @media (max-width: 1200px) {
+        gap: 40px 30px;
+      }
+      @media (max-width: 1024px) {
+        gap: 40px 20px;
+      }
+      @media (max-width: 767px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+      }
+      .cityes-item {
+        .img-wrap {
+          border-radius: 30px;
+          overflow: hidden;
+          @include flex;
+          margin-bottom: 30px;
+          @media (max-width: 1200px) {
+            margin-bottom: 24px;
+          }
+          @media (max-width: 1024px) {
+            border-radius: 16px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        b {
+          font-size: 26px;
+          font-weight: 600;
+          margin-bottom: 24px;
+          color: #1d1d1b;
+          display: block;
+          @media (max-width: 1200px) {
+            margin-bottom: 16px;
+          }
+        }
+        span {
+          font-size: 16px;
+          line-height: 24px;
+          max-width: 340px;
+          display: block;
+          color: #282828;
+        }
+      }
+    }
+  }
+}
